@@ -40,26 +40,33 @@ class _PreLoginPageState extends State<PreLoginPage> {
     final facebookButton = Padding(
         padding: EdgeInsets.symmetric(vertical: 16.0),
         child: SignInButton(
-          Buttons.Facebook, onPressed: (){
-        },
-        )
-    );
+          Buttons.Facebook,
+          onPressed: () {},
+        ));
 
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Center(
-        child: ListView(
-          shrinkWrap: true,
-          padding: EdgeInsets.only(left: 24.0, right: 24.0),
-          children: <Widget>[
-            logo,
-            SizedBox(height: 48.0),
-            loginButton,
-            SizedBox(height: 8.0),
-            signUpButton,
-            SizedBox(height: 24.0),
-            facebookButton,
-          ],
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/images/crystals_green.png"),
+            fit: BoxFit.fill,
+          ),
+        ),
+        child: Center(
+          child: ListView(
+            shrinkWrap: true,
+            padding: EdgeInsets.only(left: 24.0, right: 24.0),
+            children: <Widget>[
+              logo,
+              SizedBox(height: 48.0),
+              loginButton,
+              SizedBox(height: 8.0),
+              signUpButton,
+              SizedBox(height: 24.0),
+              facebookButton,
+            ],
+          ),
         ),
       ),
     );
