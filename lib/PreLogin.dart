@@ -15,7 +15,7 @@ class _PreLoginPageState extends State<PreLoginPage> {
     final logo = Hero(
       tag: 'hero',
       child: Image(
-        image: AssetImage('assets/images/gssc_user.png'),
+        image: AssetImage('assets/images/logo.png'),
       ),
     );
 

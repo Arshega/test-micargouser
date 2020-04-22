@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'PreLogin.dart';
 import 'LoginPage.dart';
 import 'SignupPage.dart';
+import 'HomePage.dart';
+import 'CreateProfilePage.dart';
+import 'ActiveBookings.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,6 +15,9 @@ class MyApp extends StatelessWidget {
     PreLoginPage.tag: (context) => PreLoginPage(),
     LoginPage.tag: (context) => LoginPage(),
     SignupPage.tag: (context) => SignupPage(),
+    HomePage.tag: (context) => HomePage(),
+    CreateProfilePage.tag: (context) => CreateProfilePage(),
+    ActiveBookings.tag: (context) => ActiveBookings(),
   };
 
   @override
